@@ -11,6 +11,11 @@
     <!-- fontawesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
+    <!-- jQuery UI progres bar cdn -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
     <!-- style perso -->
     <link rel="stylesheet" href="style.css">
 
@@ -20,12 +25,14 @@
 
     <div class="row m-4"><!-- div conteneur -->
 
+        <!-- div carousel gauche -->
         <div class="col-lg-3 col-md-4 col-sm-12 p-0">
             <img name="slide" class="carousel">
+            <h2 class="title">SHAKIRA</h2>
         </div>
 
-        <!-- section musique -->
-        <section class="col-lg-9 col-md-8 col-sm-12" style="background:orange"> 
+        <!-- section droite -->
+        <section class="col-lg-9 col-md-8 col-sm-12" style="background:skyblue"> 
             
             <!-- la navigation -->
             <ul>
@@ -34,10 +41,17 @@
                 <li>Videos</li>
                 <li>Store</li>
             </ul>
+            
+            <div class="auteur">
+                <h1>Akbar KHAN</h1>
+                <h4>Mon site portfolio : <a href="https://akbarkhan.fr" target="_blank">akbarkhan.fr</a></h4>
+            </div>
 
             <!-- div contenant la partie musique -->
             <div class="music">
-                <h2>Praise The Lord (Da Shine)</h2>
+
+                <h2 class="titre">Waka Waka (This time for africa)</h2>
+                <p>By Shakira</p>
 
                 <!-- play / pause -->
                 <div class="play">
@@ -45,7 +59,7 @@
                 </div>
 
                 <!-- progress bar -->
-                <div class="progress"></div>
+                <div id="progressbar"></div>
             </div>
             
         </section><!-- fin section -->

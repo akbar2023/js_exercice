@@ -4,29 +4,50 @@ body{
     color: #000;
 }
 
+h2{
+    font-weight: 800;
+}
 
 
-/* div carousel du gauche */
+/* ---------- Style Partie gauche ---------- */
+
+/* div carousel */
 .carousel {
     height: 100%; 
     width: 100%;
 }
 
-/* la navigation */
-ul li{
-    list-style: none;
-    margin: 0 5vw;
-    font-weight: 600;
+.title{
+    position: absolute;
+    top: 8vh;
+    left: 1vw;
 }
 
+
+/* ---------- Style Partie gauche ---------- */
+
+/* la navigation */
 ul {
     display: flex;
     flex-wrap: wrap;
-    margin: 5vh auto;
+    margin: 5vh 8vw 0 2vw;
+}
+
+ul li{
+    list-style: none;
+    margin: 0 6vw;
+    font-weight: 600;
 }
 
 .active { /* "Album" de la navigation */
     border-bottom: 2px solid #000;
+}
+
+/* Akbar KHAN */
+.auteur{
+    position: relative;
+    top: 10vh;
+    left: 10vw;
 }
 
 
@@ -43,7 +64,7 @@ ul {
 }
 
 /* la barre */
-.progress{
+#progressbar{
     display: inline-block;
     background: #000;
     width: 90%;

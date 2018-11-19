@@ -1,11 +1,10 @@
 var i = 0; 			// init var i
 var images = [];	// Images Array
-var background = []; // Background array
 var temps = 2000;	// Temps de transition 2s
 	 
 // Liste imgs
-images[0] = "img/mannequinf.jpg";
-images[1] = "img/mannequinh.jpg";
+images[0] = "img/shakira.jpg";
+images[1] = "img/shakira2.jpg";
 
 // function Change Image
 function changeImg(){
@@ -19,20 +18,34 @@ function changeImg(){
 
 	// temps de changement
 	setTimeout("changeImg()", temps);
+
+
+	// array couleurs
+	var colors = ['lightgreen', 'skyblue']; 
+	var j = 0; // init var j
+
+	/* change de bg tous les 2s temps = 2000 */
+	setInterval(function(){
+		document.querySelector('section').style.background = colors[j];
+		j++;
+		if (j == colors.length) j = 0;
+	}, temps);
 }
 
-// la fonction s'exécute et change d'image tous les 2s
+/* 
+la fonction s'exécute ici avec la méthode setInterval
+Ceci permet la synchronisation, car les 2 fonctions s'exécutent en mm temps
+*/
 changeImg();
 
-// array couleurs
-var colors = ['skyblue', 'orange']; 
-var j = 0; // init var j
 
-/* change de bg tous les 2s temps = 2000 */
-setInterval(function(){
-    document.querySelector('section').style.background = colors[j];
-    j++;
-    if (j == colors.length) j = 0;
-}, temps);
 
+/* jQuery UI pour progress bar  */
+
+$( function() {
+
+    $( "#progressbar" ).progressbar({
+		value: 20
+    });
+  } );
 
